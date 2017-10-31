@@ -1,0 +1,148 @@
+@import "components/vars.scss";
+@import "components/normalize.scss";
+@import "components/fonts.scss";
+
+*:focus::-webkit-input-placeholder {color: transparent}
+*:focus::-moz-placeholder          {color: transparent}
+*:focus:-moz-placeholder           {color: transparent}
+*:focus:-ms-input-placeholder      {color: transparent}
+
+*::-webkit-input-placeholder {
+	color: #8f8f8f;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #8f8f8f;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #8f8f8f;
+	opacity: 1;
+}
+
+*:-ms-input-placeholder {
+	color: #8f8f8f;
+	opacity: 1;
+}
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	color: #8f8f8f;
+}
+body input:required:valid,
+body textarea:required:valid {
+	color: #8f8f8f;
+}
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+body {
+	position: relative;
+	min-width: 320px;
+	margin: 0;
+	padding: 0;
+	font-size: 1.6rem;
+	line-height: 1.6;
+	font-weight: 400;
+	font-family: 'Museo Sans Cyrl 500', sans-serif;
+	color: #232323;
+	background-color: #fff;
+	-moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	overflow-x: hidden;
+	&:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		max-width: 1680px;
+        background-image: linear-gradient(#f1f1f1, #f1f1f1), linear-gradient(#f1f1f1, #f1f1f1), linear-gradient(#f1f1f1, #f1f1f1), linear-gradient(#f1f1f1, #f1f1f1);
+        background-position: 43% 0, 60% 0, 76% 0, 95% 0;
+        background-size: 1px 100%;
+        background-repeat: no-repeat;
+    }
+}
+.container {
+	max-width: 1680px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.hidden {
+	display: none;
+}
+a {
+	outline: none !important;
+	color: $main-color;
+	&:active {
+		color: lighten($main-color, 20%);
+	}
+	&:visited {
+		color: darken($main-color, 20%);
+	}
+}
+
+
+//Custom Styles Here
+@import "components/header.scss";
+@import "components/banner.scss";
+
+//@import "build/scss/components/magnific-popup.scss";
+
+//ALWAYS END
+//@import "components/media.scss";
+
+//Load Libs SASS
+//@import "html/libs/animate/animate.sass";
+//@import "html/libs/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min";
+//@import "html/libs/superfish/dist/css/superfish";
+//@import "html/libs/font-awesome/scss/font-awesome.scss";
+//@import "html/libs/jQuery.mmenu/dist/css/jquery.mmenu.all";
+//@import "html/libs/magnific-popup/dist/magnific-popup";
+
+@media only screen and (max-width : 1400px) {
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+	html {
+		font-size: 9px;
+	}
+}
+
+@media only screen and (max-width : 768px) {
+	html {
+		font-size: 8px;
+	}
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
+}
