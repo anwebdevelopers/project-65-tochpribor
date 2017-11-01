@@ -1,0 +1,193 @@
+.clients {
+    padding: 8rem 0 6rem 0;
+    background-color: #f8f8f8;
+}
+.clients__box {
+    display: flex;
+}
+.clients__title {
+    flex: 0 0 auto;
+    width: 25%;
+    margin: 0;
+    font-size: 5rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    color: #d1d1d1;
+}
+.clients__list {
+    flex: 0 0 auto;
+    width: 70%;
+    margin: 0 0 0 5%;
+
+    display: flex;
+    flex-wrap: wrap;
+    &.owl-carousel {
+        position: relative;
+        display: block;
+        width: 70%;
+        .owl-stage {
+            .owl-item {
+                .clients__item {
+                    width: auto;
+                    margin: 0 10% 0 0;
+                }
+
+                .clients__item-img {
+                    img {
+                        display: inline-block;
+                        vertical-align: top;
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        .owl-nav {
+            margin: 5rem 0 0 0;
+            display: flex;
+            .owl-next,
+            .owl-prev {
+                flex: 0 0 auto;
+                width: 6rem;
+                height: 6rem;
+                margin: 0 .5rem 0 0;
+                background-color: #fff;
+                border: 1.5rem solid #fff;
+                transition: all 0.3s ease;
+                position: relative;
+                &:active,
+                &:hover {
+
+                    box-shadow: 0 .8rem 5rem 0 transparentize($main-color, .8);
+                    &:before {
+                        border-color: $main-color;
+                    }
+                    &:after {
+                        background-color: $main-color;
+                    }
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    border-left: 3px solid #d0d0d0;
+                    border-bottom: 3px solid #d0d0d0;
+                    transition: all 0.3s ease;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 3px;
+                    width: 3rem;
+                    background-color: #d0d0d0;
+                    transition: all 0.3s ease;
+                }
+            }
+
+            .owl-prev {
+                left: 0;
+                &:before {
+                    left: 0;
+                    transform: translateY(-50%) rotate(45deg);
+                }
+                &:after {
+                    right: 0;
+                }
+            }
+
+            .owl-next {
+                right: 0;
+                &:before {
+                    right: 0;
+                    transform: translateY(-50%) rotate(-135deg);
+                }
+                &:after {
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+.clients__item {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 22%;
+    margin: 0 3% 5rem 0;
+    transition: all .3s ease;
+
+    &:hover, &:active {
+        .clients__item-img {
+            filter: grayscale(0);
+        }
+    }
+}
+.clients__item-img {
+    margin: 0;
+    filter: grayscale(1);
+    transition: all .3s ease;
+    img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+.clients__item-title {
+    margin: 1rem 0 0 0;
+}
+
+@media only screen and (max-width : 1400px) {
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+    .clients__title {
+        width: 30%;
+    }
+    .clients__list {
+        width: 65%;
+        &.owl-carousel {
+            width: 65%;
+        }
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .clients__title {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+    .clients__box {
+        display: block;
+    }
+    .clients__title {
+        width: auto;
+    }
+    .clients__list {
+        width: auto;
+        margin: 5rem 0 0 0;
+        &.owl-carousel {
+            width: auto;
+        }
+    }
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
+}

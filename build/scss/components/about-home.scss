@@ -1,0 +1,98 @@
+.about-home {
+    padding: 12rem 0;
+    overflow: hidden;
+    background-image: url(../img/bg-about-home.png);
+    background-position: 100% 100%;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.about-home__box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.about-home__title {
+    flex: 0 0 auto;
+    width: 38%;
+    font-size: 5.5rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    word-wrap: break-word;
+
+    position: relative;
+    &:before {
+        content: attr(data-text-decoration);
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 50rem;
+        font-weight: 700;
+        line-height: .8;
+        font-family: 'Museo Sans Cyrl 700';
+        color: $elements-color;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        left: 55%;
+        bottom: -3rem;
+        width: 4rem;
+        height: 10rem;
+        transform: skew(-25deg);
+        background-color: $elements-color;
+    }
+}
+.about-home__text {
+    flex: 0 0 auto;
+    width: 52%;
+    margin: 0 5% 0 5%;
+    line-height: 1.8;
+}
+@media only screen and (max-width : 1400px) {
+    .about-home__title {
+        font-size: 4.5rem;
+        &:before {
+            font-size: 40rem;
+        }
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    .about-home__title {
+        font-size: 3.5rem;
+        &:before {
+            font-size: 30rem;
+        }
+    }
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .about-home__box {
+        display: block;
+    }
+    .about-home__title {
+        width: auto;
+    }
+    .about-home__text {
+        width: auto;
+        margin: 5rem 0 0 0;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
+}

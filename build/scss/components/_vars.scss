@@ -1,7 +1,7 @@
 @import "bourbon";
 
 $main-color: #00b0ff;
-$elements-color: #f7f7f7;
+$elements-color: rgba(0,0,0, .03);
 
 @mixin btn {
     display: inline-block;
