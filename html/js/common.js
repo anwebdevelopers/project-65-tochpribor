@@ -65,9 +65,9 @@ $(function() {
     });
 
     /*******************************************************/
-    //CLIENTS SLIDER
+    //clients-home SLIDER
     /*******************************************************/
-    $('.clients__list').addClass('owl-carousel').owlCarousel({
+    $('.clients-home__list').addClass('owl-carousel').owlCarousel({
         loop: true,
         nav: true,
         navText: '',

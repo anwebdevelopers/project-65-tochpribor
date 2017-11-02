@@ -122,6 +122,13 @@ a {
 		}
 	}
 }
+.title {
+	margin: 0;
+	font-size: 2.4rem;
+	line-height: 1.15;
+	text-transform: uppercase;
+	font-family: 'Museo Sans Cyrl 700';
+}
 .text {
 	margin: 20px 0 0 0;
 	* {
@@ -165,9 +172,14 @@ a {
 @import "components/banner.scss";
 @import "components/about-home.scss";
 @import "components/production.scss";
-@import "components/clients.scss";
+@import "components/clients-home.scss";
 @import "components/services.scss";
 @import "components/instagram.scss";
+@import "components/footer.scss";
+//page
+@import "components/page.scss";
+@import "components/about-page.scss";
+@import "components/clients-page.scss";
 
 
 @media only screen and (max-width : 1400px) {

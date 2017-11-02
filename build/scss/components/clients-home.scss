@@ -1,11 +1,11 @@
-.clients {
+.clients-home {
     padding: 8rem 0 6rem 0;
     background-color: #f8f8f8;
 }
-.clients__box {
+.clients-home__box {
     display: flex;
 }
-.clients__title {
+.clients-home__title {
     flex: 0 0 auto;
     width: 25%;
     margin: 0;
@@ -15,7 +15,7 @@
     word-wrap: break-word;
     color: #d1d1d1;
 }
-.clients__list {
+.clients-home__list {
     flex: 0 0 auto;
     width: 70%;
     margin: 0 0 0 5%;
@@ -28,12 +28,12 @@
         width: 70%;
         .owl-stage {
             .owl-item {
-                .clients__item {
+                .clients-home__item {
                     width: auto;
                     margin: 0 10% 0 0;
                 }
 
-                .clients__item-img {
+                .clients-home__item-img {
                     img {
                         display: inline-block;
                         vertical-align: top;
@@ -114,7 +114,7 @@
         }
     }
 }
-.clients__item {
+.clients-home__item {
     text-decoration: none;
     color: inherit;
     display: block;
@@ -123,12 +123,12 @@
     transition: all .3s ease;
 
     &:hover, &:active {
-        .clients__item-img {
+        .clients-home__item-img {
             filter: grayscale(0);
         }
     }
 }
-.clients__item-img {
+.clients-home__item-img {
     margin: 0;
     filter: grayscale(1);
     transition: all .3s ease;
@@ -138,7 +138,7 @@
         height: auto;
     }
 }
-.clients__item-title {
+.clients-home__item-title {
     margin: 1rem 0 0 0;
 }
 
@@ -151,10 +151,10 @@
 }
 
 @media only screen and (max-width : 992px) {
-    .clients__title {
+    .clients-home__title {
         width: 30%;
     }
-    .clients__list {
+    .clients-home__list {
         width: 65%;
         &.owl-carousel {
             width: 65%;
@@ -163,19 +163,19 @@
 }
 
 @media only screen and (max-width : 768px) {
-    .clients__title {
+    .clients-home__title {
         font-size: 4rem;
     }
 }
 
 @media only screen and (max-width : 640px) {
-    .clients__box {
+    .clients-home__box {
         display: block;
     }
-    .clients__title {
+    .clients-home__title {
         width: auto;
     }
-    .clients__list {
+    .clients-home__list {
         width: auto;
         margin: 5rem 0 0 0;
         &.owl-carousel {

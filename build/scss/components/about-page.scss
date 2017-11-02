@@ -1,0 +1,59 @@
+.about-page {
+    padding: 4rem 0;
+}
+.about-page__box {
+    display: flex;
+}
+.about-page__content {
+    flex: 0 0 auto;
+    width: 53%;
+}
+.about-page__text {
+    margin: 2rem 0 0 0;
+}
+.about-page__img {
+    flex: 0 0 auto;
+    width: calc(42% + 15px);
+    margin: 0 -15px 0 5%;
+    img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+@media only screen and (max-width : 1400px) {
+
+}
+
+@media only screen and (max-width : 1200px) {
+    .about-page__box {
+        display: block;
+    }
+    .about-page__content {
+        width: auto;
+    }
+    .about-page__img {
+        margin: 5rem 0 0 0;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
+}

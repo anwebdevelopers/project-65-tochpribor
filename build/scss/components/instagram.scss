@@ -1,5 +1,5 @@
 .instagram {
-    padding: 8rem 0 4rem 0;
+    padding: 4rem 0 9rem 0;
     overflow: hidden;
     position: relative;
 }
@@ -25,7 +25,7 @@
     flex-wrap: wrap;
     position: relative;
     &.owl-carousel {
-
+        margin: 5rem 0 0 0;
         display: block;
         width: auto;
         padding: 0 8rem;
@@ -126,7 +126,7 @@
 
     flex: 0 0 auto;
     width: 8.5%;
-    margin: 0 2% 4rem 2%;
+    margin: 4rem 2% 0 2%;
     text-align: center;
     border-radius: 50%;
     transition: all .3s ease;
@@ -146,7 +146,7 @@
     }
     .instagram__item {
         width: 9.28%;
-        margin: 0 2.5% 4rem 2.5%;
+        margin: 4rem 2.5% 0 2.5%;
     }
 }
 
@@ -156,7 +156,7 @@
     }
     .instagram__item {
         width: 10.6666%;
-        margin: 0 3% 5rem 3%;
+        margin: 4rem 3% 0 3%;
     }
 }
 
@@ -166,7 +166,7 @@
     }
     .instagram__item {
         width: 13%;
-        margin: 0 3.5% 5rem 3.5%;
+        margin: 4rem 3.5% 0 3.5%;
     }
 }
 
@@ -181,7 +181,7 @@
     }
     .instagram__item {
         width: 17%;
-        margin: 0 4% 5rem 4%;
+        margin: 4rem 4% 0 4%;
     }
 }
 
@@ -191,14 +191,14 @@
     }
     .instagram__item {
         width: 21%;
-        margin: 0 6% 5rem 6%;
+        margin: 4rem 6% 0 6%;
     }
 }
 
 @media only screen and (max-width : 480px) {
     .instagram__item {
         width: 30%;
-        margin: 0 10% 5rem 10%;
+        margin: 4rem 10% 0 10%;
     }
 }
 
@@ -222,6 +222,6 @@
     }
     .instagram__item {
         width: 40%;
-        margin: 0 5% 5rem 5%;
+        margin: 4rem 5% 0 5%;
     }
 }
