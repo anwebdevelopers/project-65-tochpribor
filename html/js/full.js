@@ -136,7 +136,7 @@ $(function() {
     //Выравнивание блоков по высоте
     //------------------------------------
 
-    $(".services__item h4").equalHeights();
+    $(".categories-home__item h4").equalHeights();
     $(".news__text h4").equalHeights();
     $(".news__text p").equalHeights();
     $(".links__item span").equalHeights();

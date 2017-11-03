@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 				options: {
 					flatten: false,
 					expand: true,
-					production: false,
+					production-home: false,
 					assets: '<%= app.docs.dest %>/assets',
 					postprocess: require('pretty'),
 

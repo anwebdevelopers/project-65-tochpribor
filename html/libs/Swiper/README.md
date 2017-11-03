@@ -17,7 +17,7 @@ Swiper is not compatible with all platforms, it is a modern touch slider which i
 
 # Dist / Build
 
-On production use files (JS and CSS) only from `dist/` folder, there will be the most stable versions, `build/` folder is only for development purpose
+On production-home use files (JS and CSS) only from `dist/` folder, there will be the most stable versions, `build/` folder is only for development purpose
 
 ### Build
 

@@ -1,14 +1,14 @@
-.production {
+.production-home {
     padding: 8rem 0 4rem 0;
     background-color: #fff;
     box-shadow: 0 .4rem 5rem 0 rgba(0,0,0, .05);
     overflow: hidden;
     position: relative;
 }
-.production__container {
+.production-home__container {
 
 }
-.production__title {
+.production-home__title {
     position: absolute;
     z-index: 0;
     top: 4rem;
@@ -22,7 +22,7 @@
     text-align: center;
     overflow: hidden;
 }
-.production__box {
+.production-home__box {
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -33,12 +33,12 @@
         padding: 0 10rem;
         .owl-stage {
             .owl-item {
-                .production__item {
+                .production-home__item {
                     width: auto;
                     margin: 0 8%;
                 }
 
-                .production__item-img {
+                .production-home__item-img {
                     img {
                         display: inline-block;
                         vertical-align: top;
@@ -121,7 +121,7 @@
     }
 }
 
-.production__item {
+.production-home__item {
     text-decoration: none;
     color: inherit;
     display: block;
@@ -149,23 +149,23 @@
         &:before {
             background-color: $elements-color;
         }
-        .production__item-title,
-        .production__item-number {
+        .production-home__item-title,
+        .production-home__item-number {
             text-decoration: underline;
         }
     }
 }
 @supports (text-decoration-color: transparent) {
-    .production__item {
+    .production-home__item {
         &:hover, &:active {
-            .production__item-title,
-            .production__item-number {
+            .production-home__item-title,
+            .production-home__item-number {
                 text-decoration-color: currentColor;
             }
         }
     }
 }
-.production__item-img {
+.production-home__item-img {
     margin: 0;
     img {
         max-width: 100%;
@@ -173,78 +173,78 @@
         height: auto;
     }
 }
-.production__item-title {
+.production-home__item-title {
     margin: 3rem 0 0 0;
     transition: text-decoration-color .3s ease;
 }
-.production__item-number {
+.production-home__item-number {
     font-size: 2rem;
     font-family: 'Museo Sans Cyrl 700';
     transition: text-decoration-color .3s ease;
 }
 @supports (text-decoration-color: transparent) {
-    .production__item-title,
-    .production__item-number {
+    .production-home__item-title,
+    .production-home__item-number {
         text-decoration: underline;
         text-decoration-color: transparent;
     }
 }
 
 @media only screen and (max-width : 1400px) {
-    .production__title {
+    .production-home__title {
         font-size: 10rem;
     }
 }
 
 @media only screen and (max-width : 1200px) {
-    .production__item {
+    .production-home__item {
         width: 28.3333%;
         margin: 0 2.5% 5rem 2.5%;
     }
-    .production__title {
+    .production-home__title {
         font-size: 9rem;
     }
 }
 
 @media only screen and (max-width : 992px) {
-    .production__title {
+    .production-home__title {
         font-size: 8rem;
     }
 }
 
 @media only screen and (max-width : 768px) {
-    .production__title {
+    .production-home__title {
         font-size: 7rem;
     }
-    .production__box {
+    .production-home__box {
         &.owl-carousel {
             padding: 0 8rem;
         }
     }
-    .production__item {
+    .production-home__item {
         width: 45%;
         margin: 0 2.5% 5rem 2.5%;
     }
 }
 
 @media only screen and (max-width : 640px) {
-    .production__title {
+    .production-home__title {
         font-size: 6rem;
     }
 }
 
 @media only screen and (max-width : 480px) {
-    .production__box {
+    .production-home__box {
         display: block;
     }
-    .production__item {
+    .production-home__item {
         width: auto;
         margin: 0 0 5rem 0;
     }
 }
 
 @media only screen and (max-width : 360px) {
-    .production__box {
+    .production-home__box {
         &.owl-carousel {
             padding: 0;
             .owl-nav {

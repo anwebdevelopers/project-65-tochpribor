@@ -16,7 +16,7 @@ All bug reports and problem issues require a [**reduced test case**](http://css-
 
 + A reduced test case clearly demonstrates the bug or issue.
 + It contains the bare minimum HTML, CSS, and JavaScript required to demonstrate the bug.
-+ A link to your production site is **not** a reduced test case.
++ A link to your production-home site is **not** a reduced test case.
 
 Providing a reduced test case is the best way to get your issue addressed. Without a reduced test case, your issue may be closed.
 

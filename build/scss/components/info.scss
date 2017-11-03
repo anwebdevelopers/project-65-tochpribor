@@ -1,15 +1,13 @@
-.about-page {
+.info {
     padding: 4rem 0;
 }
-.about-page__box {
+.info__box {
+    margin: 2rem 0 0 0;
     display: flex;
 }
-.about-page__content {
+.info__text {
     flex: 0 0 auto;
-    width: 53%;
-}
-.about-page__text {
-    margin: 2rem 0 0 0;
+    width: 67.5%;
     position: relative;
     &:before {
         content: '';
@@ -24,28 +22,62 @@
         transition: all .3s ease;
     }
 }
-.about-page__img {
+.info__link {
     flex: 0 0 auto;
-    width: calc(42% + 15px);
-    margin: 0 -15px 0 5%;
-    img {
+    width: 27.5%;
+    margin: 0 0 0 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.info__link-item {
+    display: block;
+    margin: 0 0 3rem 0;
+    text-decoration: none;
+    color: inherit;
+    flex: 0 1 auto;
+    padding: 0 0 0 4rem;
+    transition: all .5s ease;
+    position: relative;
+    &:hover, &:active {
+        color: $main-color;
+    }
+}
+.info__link-img {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3rem;
+    height: 4rem;
+    svg {
         max-width: 100%;
         width: auto;
         height: auto;
+        fill: currentColor;
     }
 }
+.info__link-title {
+    line-height: 1.25;
+}
+.info__link-text {
+    margin: 1rem 0 0 0;
+    color: $main-color;
+}
+
 @media only screen and (max-width : 1400px) {
 
 }
 
 @media only screen and (max-width : 1200px) {
-    .about-page__box {
+    .info__box {
         display: block;
     }
-    .about-page__content {
+    .info__text {
         width: auto;
     }
-    .about-page__img {
+    .info__link {
         margin: 5rem 0 0 0;
         width: auto;
     }

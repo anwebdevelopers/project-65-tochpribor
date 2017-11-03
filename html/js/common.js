@@ -38,9 +38,9 @@ $(function() {
     });
 
     /*******************************************************/
-    //PRODUCTION SLIDER
+    //production-home SLIDER
     /*******************************************************/
-    $('.production__box').addClass('owl-carousel').owlCarousel({
+    $('.production-home__box').addClass('owl-carousel').owlCarousel({
         loop: true,
         nav: true,
         navText: '',

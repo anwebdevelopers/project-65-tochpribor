@@ -1,23 +1,31 @@
-.services {
-    padding: 9rem 0 1px 0;
+.categories-page {
+    padding: 4rem 0 1px 0;
 }
-.services__box {
+.categories-page__box {
+    width: 72.5%;
+}
+.categories-page__text {
+    margin: 2rem 0 0 0;
+}
+.categories-page__list {
+    margin: 6rem 0 0 0;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    counter-reset: services-counter;
+    justify-content: space-between;
+    counter-reset: categories-page-counter;
 }
-.services__item {
+.categories-page__item {
     text-decoration: none;
     color: inherit;
     display: block;
-    width: 28.3333%;
-    margin: 0 5% 9rem 0;
+    width: 45%;
+    margin: 0 0 6rem 0;
     padding: 0 0 0 8rem;
     position: relative;
-    counter-increment: services-counter;
+    counter-increment: categories-page-counter;
     &:before {
-        content: '0' counter(services-counter) ' /';
+        content: '0' counter(categories-page-counter) ' /';
         position: absolute;
         left: 0;
         top: 0;
@@ -28,7 +36,7 @@
     }
     &:nth-child(n+10) {
         &:before {
-            content: counter(services-counter) ' /';
+            content: counter(categories-page-counter) ' /';
         }
     }
     &:after {
@@ -45,22 +53,22 @@
         &:after {
             background-color: $elements-color;
         }
-        .services__item-title {
+        .categories-page__item-title {
             color: $main-color;
             text-decoration: underline;
         }
     }
 }
 @supports (text-decoration-color: transparent) {
-    .services__item {
+    .categories-page__item {
         &:hover, &:active {
-            .services__item-title {
+            .categories-page__item-title {
                 text-decoration-color: currentColor;
             }
         }
     }
 }
-.services__item-title {
+.categories-page__item-title {
     margin: 0;
     font-size: 3rem;
     line-height: 1.13;
@@ -68,12 +76,12 @@
     transition: all .3s ease;
 }
 @supports (text-decoration-color: transparent) {
-    .services__item-title  {
+    .categories-page__item-title  {
         text-decoration: underline;
         text-decoration-color: transparent;
     }
 }
-.services__item-text {
+.categories-page__item-text {
     margin: 1.5rem 0 0 0;
     color: #8f8f8f;
 }
@@ -81,54 +89,69 @@
 
 
 @media only screen and (max-width : 1400px) {
-
+    .categories-page__box {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width : 1200px) {
-    .services__item {
-        width: 31.3333%;
-        margin: 0 2% 9rem 0;
+    .categories-page__box {
+        width: 90%;
     }
-    .services__item-title {
+    // .categories-page__item {
+    //     width: 31.3333%;
+    //     margin: 0 2% 9rem 0;
+    // }
+    .categories-page__item-title {
         font-size: 2.8rem;
     }
 }
 
 @media only screen and (max-width : 992px) {
-    .services__item {
-        width: 40%;
-        margin: 0 10% 9rem 0;
+    .categories-page__box {
+        width: auto;
     }
+    .categories-page__list {
+        display: block;
+    }
+    .categories-page__item {
+        width: auto;
+        margin: 0 0 6rem 0;
+    }
+    // .categories-page__item {
+    //     width: 40%;
+    //     margin: 0 10% 9rem 0;
+    // }
 }
 
 @media only screen and (max-width : 768px) {
-    .services__item {
-        width: 45%;
-        margin: 0 5% 9rem 0;
+    .categories-page__item {
+    //     width: 45%;
+    //     margin: 0 5% 9rem 0;
         padding: 0 0 0 7rem;
     }
 }
 
 @media only screen and (max-width : 640px) {
-    .services__item {
+    .categories-page__item {
         padding: 0 0 0 6rem;
         &:before {
             font-size: 2.6rem;
         }
     }
-    .services__item-title {
+    .categories-page__item-title {
         font-size: 2.6rem;
     }
 }
 
 @media only screen and (max-width : 480px) {
-    .services__box {
-        display: block;
-    }
-    .services__item {
-        width: auto;
-        margin: 0 0 9rem 0;
-    }
+    // .categories-page__list {
+    //     display: block;
+    // }
+    // .categories-page__item {
+    //     width: auto;
+    //     margin: 0 0 9rem 0;
+    // }
 }
 
 @media only screen and (max-width : 360px) {

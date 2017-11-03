@@ -75,12 +75,12 @@ module.exports = function(grunt) {
           raw: jekyllConfig + "url: local"
         }
       },
-      production: {
+      production-home: {
         options: {
           src: 'website',
-          dest: '_production',
-          url: 'production',
-          raw: jekyllConfig + "url: production"
+          dest: '_production-home',
+          url: 'production-home',
+          raw: jekyllConfig + "url: production-home"
         }
         
       }
@@ -206,7 +206,7 @@ module.exports = function(grunt) {
   // Default task.
   grunt.registerTask('default', ['sass', 'mfpbuild', 'uglify', 'copy', 'jekyll:dev']);
 
-  grunt.registerTask('production', ['sass', 'mfpbuild', 'uglify', 'copy', 'cssmin', 'jekyll:production']);
+  grunt.registerTask('production-home', ['sass', 'mfpbuild', 'uglify', 'copy', 'cssmin', 'jekyll:production-home']);
   grunt.registerTask('nosite', ['sass', 'mfpbuild', 'uglify']);
   grunt.registerTask('hint', ['jshint']);
 

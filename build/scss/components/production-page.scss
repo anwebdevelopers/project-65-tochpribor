@@ -1,0 +1,125 @@
+.production-page {
+    padding: 4rem 0;
+}
+
+.production-page__container {
+
+}
+.production-page__text {
+    margin: 2rem 0 0 0;
+}
+.production-page__list {
+    margin: 5rem -1rem 0 -1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.production-page__item {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+
+    flex: 0 0 auto;
+    width: calc(25% - 2rem);
+    margin: 0 1rem 2rem 1rem;
+    padding: 4rem 3%;
+    text-align: center;
+    transition: all .3s ease;
+
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        left: 50%;
+        bottom: 2rem;
+        width: 3rem;
+        height: 7rem;
+        transform: translateX(-50%) skew(-25deg);
+        transition: all .3s ease;
+    }
+    &:hover, &:active {
+        color: $main-color;
+        background-color: #fff;
+        box-shadow: 0 0 5rem 0 rgba(0,0,0,.05);
+        &:before {
+            background-color: $elements-color;
+        }
+        .production-page__item-title {
+            text-decoration: underline;
+        }
+    }
+}
+@supports (text-decoration-color: transparent) {
+    .production-page__item {
+        &:hover, &:active {
+            .production-page__item-title {
+                text-decoration-color: currentColor;
+            }
+        }
+    }
+}
+.production-page__item-img {
+    margin: 0;
+    img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+.production-page__item-title {
+    margin: 3rem 0 0 0;
+    font-size: 2rem;
+    font-family: 'Museo Sans Cyrl 700';
+    transition: text-decoration-color .3s ease;
+}
+
+@supports (text-decoration-color: transparent) {
+    .production-page__item-title {
+        text-decoration: underline;
+        text-decoration-color: transparent;
+    }
+}
+
+@media only screen and (max-width : 1400px) {
+
+}
+
+@media only screen and (max-width : 1200px) {
+    .production-page__item {
+        width: calc(33.3333% - 2rem);
+        margin: 0 1rem 2rem 1rem;
+    }
+
+}
+
+@media only screen and (max-width : 992px) {
+    .production-page__item {
+        width: calc(50% - 2rem);
+        margin: 0 1rem 2rem 1rem;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+
+
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+    .production-page__list {
+        display: block;
+        margin: 5rem 0;
+    }
+    .production-page__item {
+        width: auto;
+        margin: 0 0 5rem 0;
+    }
+}
