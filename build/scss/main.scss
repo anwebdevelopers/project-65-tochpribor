@@ -8,29 +8,29 @@
 *:focus:-ms-input-placeholder      {color: transparent}
 
 *::-webkit-input-placeholder {
-	color: #8f8f8f;
+	color: #d0d0d0;
 	opacity: 1;
 }
 *:-moz-placeholder {
-	color: #8f8f8f;
+	color: #d0d0d0;
 	opacity: 1;
 }
 *::-moz-placeholder {
-	color: #8f8f8f;
+	color: #d0d0d0;
 	opacity: 1;
 }
 
 *:-ms-input-placeholder {
-	color: #8f8f8f;
+	color: #d0d0d0;
 	opacity: 1;
 }
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
-	color: #8f8f8f;
+	color: #d0d0d0;
 }
 body input:required:valid,
 body textarea:required:valid {
-	color: #8f8f8f;
+	color: #d0d0d0;
 }
 *,
 *:before,
@@ -130,7 +130,7 @@ a {
 	font-family: 'Museo Sans Cyrl 700';
 }
 * + .title {
-	margin-top: 5rem;
+	margin-top: 6rem;
 }
 .text {
 	* {
@@ -186,6 +186,7 @@ a {
 @import "components/reviews.scss";
 @import "components/categories-page.scss";
 @import "components/production-page.scss";
+@import "components/contacts.scss";
 
 @media only screen and (max-width : 1400px) {
 
