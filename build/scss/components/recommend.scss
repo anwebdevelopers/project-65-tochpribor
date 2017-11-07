@@ -1,0 +1,273 @@
+.recommend {
+    padding: 17rem 0 8rem 0;
+    overflow: hidden;
+    position: relative;
+}
+.recommend__container {
+
+}
+.recommend__title {
+    position: absolute;
+    z-index: 0;
+    top: 9rem;
+    left: 0;
+    right: 0;
+    margin: 0;
+    font-size: 12rem;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $elements-color;
+    text-align: center;
+    overflow: hidden;
+}
+.recommend__box {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 0 5rem 0;
+    &.owl-carousel {
+
+        display: block;
+        width: auto;
+        padding: 0 10rem;
+        .owl-stage {
+            padding-bottom: 5rem;
+            .owl-item {
+                .recommend__item {
+                    width: auto;
+                    margin: 0 8%;
+                }
+
+                .recommend__item-img {
+                    img {
+                        display: inline-block;
+                        vertical-align: top;
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        .owl-nav {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: calc(50% - 5rem);
+            .owl-next,
+            .owl-prev {
+                position: absolute;
+                top: 0;
+                transform: translateY(-50%);
+                width: 6rem;
+                height: 6rem;
+                border: 1.5rem solid transparent;
+                transition: all 0.3s ease;
+                &:active,
+                &:hover {
+                    background-color: #fff;
+                    box-shadow: 0 .8rem 5rem 0 transparentize($main-color, .8);
+                    &:before {
+                        border-color: $main-color;
+                    }
+                    &:after {
+                        background-color: $main-color;
+                    }
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    border-left: 3px solid #d0d0d0;
+                    border-bottom: 3px solid #d0d0d0;
+                    transition: all 0.3s ease;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 3px;
+                    width: 3rem;
+                    background-color: #d0d0d0;
+                    transition: all 0.3s ease;
+                }
+            }
+
+            .owl-prev {
+                left: 0;
+                &:before {
+                    left: 0;
+                    transform: translateY(-50%) rotate(45deg);
+                }
+                &:after {
+                    right: 0;
+                }
+            }
+
+            .owl-next {
+                right: 0;
+                &:before {
+                    right: 0;
+                    transform: translateY(-50%) rotate(-135deg);
+                }
+                &:after {
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.recommend__item {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+
+    flex: 0 0 auto;
+    width: 21%;
+    margin: 0 2% 5rem 2%;
+    padding: 3rem;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 .4rem 5rem 0 rgba(0,0,0, .05);
+    transition: all .3s ease;
+
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        right: 30%;
+        bottom: 5rem;
+        width: 4rem;
+        height: 10rem;
+        transform: skew(-25deg);
+        transition: all .3s ease;
+    }
+    &:hover, &:active {
+        color: $main-color;
+        &:before {
+            background-color: $elements-color;
+        }
+        .recommend__item-title,
+        .recommend__item-number {
+            text-decoration: underline;
+        }
+    }
+}
+
+@supports (text-decoration-color: transparent) {
+    .recommend__item {
+        &:hover, &:active {
+            .recommend__item-title,
+            .recommend__item-number {
+                text-decoration-color: currentColor;
+            }
+        }
+    }
+}
+.recommend__item-img {
+    margin: 0;
+    img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+.recommend__item-title {
+    margin: 3rem 0 0 0;
+    transition: text-decoration-color .3s ease;
+}
+.recommend__item-number {
+    font-size: 2rem;
+    font-family: 'Museo Sans Cyrl 700';
+    transition: text-decoration-color .3s ease;
+}
+@supports (text-decoration-color: transparent) {
+    .recommend__item-title,
+    .recommend__item-number {
+        text-decoration: underline;
+        text-decoration-color: transparent;
+    }
+}
+.recommend__item-text {
+    margin: 0;
+    color: #8f8f8f;
+}
+
+@media only screen and (max-width : 1400px) {
+    .recommend__title {
+        font-size: 10rem;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    .recommend__item {
+        width: 28.3333%;
+        margin: 0 2.5% 5rem 2.5%;
+    }
+    .recommend__title {
+        font-size: 9rem;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .recommend__title {
+        font-size: 8rem;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .recommend__title {
+        font-size: 7rem;
+    }
+    .recommend__box {
+        &.owl-carousel {
+            padding: 0 8rem;
+        }
+    }
+    .recommend__item {
+        width: 45%;
+        margin: 0 2.5% 5rem 2.5%;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+    .recommend__title {
+        font-size: 6rem;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .recommend__box {
+        display: block;
+        &.owl-carousel {
+            padding: 0;
+            .owl-nav {
+                position: relative;
+                margin: 3rem 0 0 0;
+                display: flex;
+                justify-content: center;
+                .owl-next,
+                .owl-prev {
+                    position: relative;
+                    transform: none;
+                    margin: 0 .3rem;
+                }
+            }
+        }
+    }
+    .recommend__item {
+        width: auto;
+        margin: 0 0 5rem 0;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+    .recommend__box {
+
+    }
+}

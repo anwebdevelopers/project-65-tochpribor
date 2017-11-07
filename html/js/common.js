@@ -38,7 +38,7 @@ $(function() {
     });
 
     /*******************************************************/
-    //production-home SLIDER
+    //PRODUCTION HOME SLIDER
     /*******************************************************/
     $('.production-home__box').addClass('owl-carousel').owlCarousel({
         loop: true,
@@ -65,7 +65,7 @@ $(function() {
     });
 
     /*******************************************************/
-    //clients-home SLIDER
+    //CLIENTS HOME SLIDER
     /*******************************************************/
     $('.clients-home__list').addClass('owl-carousel').owlCarousel({
         loop: true,
@@ -127,9 +127,81 @@ $(function() {
         }
     });
 
-    //-------------------------------
+
+    /*******************************************************/
+    //PRODUCT MAIN SLIDER
+    /*******************************************************/
+    $('.product-main__slider').addClass('owl-carousel').owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        navText: '',
+        autoplay: true,
+        autoplayTimeout: 5000,
+        smartSpeed: 300
+    });
+
+    /*******************************************************/
+    //PRODUCT CATEGORIES SLIDER
+    /*******************************************************/
+    $('.product-categories__box').addClass('owl-carousel').owlCarousel({
+        loop: true,
+        nav: true,
+        navText: '',
+        autoplay: true,
+        autoplayTimeout: 5000,
+        smartSpeed: 300,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            361: {
+                items: 2
+            },
+            641: {
+                items: 3
+            },
+            993: {
+                items: 4
+            },
+            1201: {
+                items: 5
+            },
+            1401: {
+                items: 6
+            }
+        }
+    });
+
+    /*******************************************************/
+    //RECOMMEND SLIDER
+    /*******************************************************/
+    $('.recommend__box').addClass('owl-carousel').owlCarousel({
+        loop: true,
+        nav: true,
+        navText: '',
+        autoplay: true,
+        autoplayTimeout: 5000,
+        smartSpeed: 300,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            641: {
+                items: 2
+            },
+            993: {
+                items: 3
+            }
+        }
+    });
+
+
+    /*******************************************************/
     // Google Map
-    //-------------------------------
+    /*******************************************************/
     if(typeof google === 'object' && typeof google.maps === 'object' && $('#map').length) {
         function initializeMap() {
             var markerPositions = new Array();

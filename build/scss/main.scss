@@ -75,6 +75,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6, strong, b {
 	font-family: 'Museo Sans Cyrl 700';
+	font-weight: 700;
 }
 a {
 	outline: none !important;
@@ -187,6 +188,11 @@ a {
 @import "components/categories-page.scss";
 @import "components/production-page.scss";
 @import "components/contacts.scss";
+@import "components/product-main.scss";
+@import "components/product-about.scss";
+@import "components/product-categories.scss";
+@import "components/recommend.scss";
+@import "components/popup.scss";
 
 @media only screen and (max-width : 1400px) {
 
