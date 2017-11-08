@@ -49,7 +49,7 @@
 					</div>
 					<form class="header__search">
 						<input type="text" placeholder="Поиск">
-						<button type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"><path d="M51.6 96.7c11 0 21-3.9 28.8-10.5l35 35c.8.8 1.8 1.2 2.9 1.2s2.1-.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-35-35c6.5-7.8 10.5-17.9 10.5-28.8 0-24.9-20.2-45.1-45.1-45.1-24.8 0-45.1 20.3-45.1 45.1 0 24.9 20.3 45.1 45.1 45.1zm0-82c20.4 0 36.9 16.6 36.9 36.9C88.5 72 72 88.5 51.6 88.5S14.7 71.9 14.7 51.6c0-20.3 16.6-36.9 36.9-36.9z"/></svg></button>
+						<button type="submit"><svg><use xlink:href="#loupe"></use></svg></button>
 					</form>
 					<button type="button" class="header__button-menu"><span></span></button>
 				</div>
@@ -100,9 +100,12 @@
 							<div class="about-page__content">
 								<h1 class="about-page__title title">заголовок средней длины (или в 2 строки)</h1>
 								<div class="about-page__text text">
-									<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-									<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-									<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum you need to be sure there isn't anything.</p>
+									<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem
+										Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+									<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,
+										to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+									<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem
+										Ipsum you need to be sure there isn't anything.</p>
 								</div>
 							</div>
 							<figure class="about-page__img">
@@ -122,7 +125,7 @@
 					<div class="footer__calltoaction">
 						<p class="footer__calltoaction-title">есть вопросы? свяжитесь с нами!</p>
 						<div class="footer__calltoaction-button">
-							<a href="#" class="button">Оставить заявку</a>
+							<a href="#callback" class="popup-with-move-anim button">Оставить заявку</a>
 						</div>
 					</div>
 					<div class="footer__contacts">
@@ -142,7 +145,7 @@
 							<div class="footer__contacts-right">
 								<ul class="footer__social">
 									<li>
-										<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M373.66 0H138.34C62.06 0 0 62.06 0 138.34v235.32C0 449.94 62.06 512 138.34 512h235.32C449.94 512 512 449.94 512 373.66V138.34C512 62.06 449.94 0 373.66 0zm96.976 373.66c0 53.472-43.503 96.976-96.977 96.976H138.34c-53.472 0-96.976-43.503-96.976-96.977V138.34c0-53.472 43.503-96.976 96.977-96.976h235.32c53.472 0 96.976 43.503 96.976 96.977v235.32z"/><path d="M370.586 238.14c-3.64-24.546-14.84-46.794-32.386-64.34-17.547-17.547-39.795-28.747-64.34-32.386-11.177-1.657-22.508-1.657-33.683 0-30.336 4.5-57.103 20.54-75.372 45.172-18.27 24.63-25.854 54.903-21.355 85.237 4.5 30.335 20.54 57.102 45.172 75.372 19.996 14.83 43.706 22.62 68.153 22.62 5.667 0 11.375-.42 17.083-1.266 30.336-4.5 57.103-20.542 75.372-45.173 18.27-24.63 25.855-54.9 21.356-85.236zM267.79 327.633c-19.404 2.882-38.77-1.973-54.526-13.66-15.757-11.687-26.02-28.81-28.896-48.216-2.878-19.405 1.973-38.77 13.66-54.527 11.688-15.758 28.81-26.02 48.217-28.898 3.574-.53 7.173-.795 10.772-.795s7.2.265 10.773.796c32.23 4.78 57.098 29.645 61.878 61.877 5.94 40.058-21.817 77.482-61.877 83.422zM400.05 111.95c-3.853-3.85-9.184-6.057-14.626-6.057S374.65 108.1 370.8 111.95c-3.852 3.853-6.06 9.175-6.06 14.626 0 5.45 2.208 10.773 6.06 14.625 3.85 3.852 9.182 6.06 14.624 6.06s10.773-2.207 14.625-6.06c3.85-3.85 6.057-9.182 6.057-14.624 0-5.443-2.207-10.774-6.058-14.625z"/></svg></a>
+										<a href="#"><svg><use xlink:href="#instagram"></use></svg></a>
 									</li>
 								</ul>
 							</div>
@@ -195,10 +198,36 @@
 		</div>
 	</footer>
 
+	<div class="hidden">
+
+		<form id="callback" class="popup my-mfp-slide-bottom zoom-anim-dialog" data-text-decoration="оформление заявки">
+			<h3 class="popup__title">оформление заявки</h3>
+			<input type="text" class="popup__field" placeholder="Ваш телефон">
+			<input type="text" class="popup__field" placeholder="Ваше имя">
+			<input type="text" class="popup__field" placeholder="Ваш e-mail">
+			<textarea class="popup__area" placeholder="Ваш комментарий"></textarea>
+			<button type="submit" class="popup__submit button">Перезвоните мне</button>
+		</form>
+
+		<!-- svg icons sprite -->
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <symbol id="loupe" viewBox="0 0 129 129">
+		      <path d="M51.6 96.7c11 0 21-3.9 28.8-10.5l35 35c.8.8 1.8 1.2 2.9 1.2s2.1-.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-35-35c6.5-7.8 10.5-17.9 10.5-28.8 0-24.9-20.2-45.1-45.1-45.1-24.8 0-45.1 20.3-45.1 45.1 0 24.9 20.3 45.1 45.1 45.1zm0-82c20.4 0 36.9 16.6 36.9 36.9C88.5 72 72 88.5 51.6 88.5S14.7 71.9 14.7 51.6c0-20.3 16.6-36.9 36.9-36.9z"/>
+		    </symbol>
+		    <symbol  id="pdf" viewBox="0 0 314.02 385.71">
+		      <path d="M77.8 248.2c0-6.4-4.5-10.3-12.3-10.3a27.3 27.3 0 0 0-6.5.6V259a24.7 24.7 0 0 0 5.2.5c8.4 0 13.6-4.2 13.6-11.3M126.3 238a32.6 32.6 0 0 0-7 .8v45.5a28.4 28.4 0 0 0 5.4.3c14.2 0 23.5-7.7 23.5-24.4 0-14.4-8.4-22-22-22"></path><path d="M216.5 0h-155a41 41 0 0 0-41 41v152h-4A16.5 16.5 0 0 0 0 209.3v100.3a16.5 16.5 0 0 0 16.5 16.6h4v18.4a41 41 0 0 0 41 41H273a41 41 0 0 0 41-41V97.2zm-173 227.5a129.4 129.4 0 0 1 21.2-1.4c9.7 0 16.6 2 21.2 5.6a20.3 20.3 0 0 1 7.4 16c0 7-2.3 12.7-6.4 16.6-5.4 5-13.4 7.4-22.6 7.4a40.2 40.2 0 0 1-5.4-.3V296H43.4zm229.5 133H61.6a16 16 0 0 1-16-15.8v-18.4H243a16.5 16.5 0 0 0 16.5-16.6V209.4a16.5 16.5 0 0 0-16.5-16.5h-197V41a16 16 0 0 1 15.8-15.8L207 25v53.8a28.5 28.5 0 0 0 28.6 28.5l52.7-.2.6 237.7a16 16 0 0 1-16 16m-169.6-65v-68.2a141.5 141.5 0 0 1 21.3-1.4c13.2 0 21.8 2.4 28.5 7.5 7.2 5.4 11.7 14 11.7 26.2 0 13.3-5 22.5-11.6 28.2-7.4 6-18.5 9-32 9a136.2 136.2 0 0 1-18-1M216 255.3v12.8h-25v28h-15.7v-69.6h42.5v13H191v15.8z"></path>
+		    </symbol>
+		    <symbol id="instagram" viewBox="0 0 512 512">
+		      <path d="M373.66 0H138.34C62.06 0 0 62.06 0 138.34v235.32C0 449.94 62.06 512 138.34 512h235.32C449.94 512 512 449.94 512 373.66V138.34C512 62.06 449.94 0 373.66 0zm96.976 373.66c0 53.472-43.503 96.976-96.977 96.976H138.34c-53.472 0-96.976-43.503-96.976-96.977V138.34c0-53.472 43.503-96.976 96.977-96.976h235.32c53.472 0 96.976 43.503 96.976 96.977v235.32z"/><path d="M370.586 238.14c-3.64-24.546-14.84-46.794-32.386-64.34-17.547-17.547-39.795-28.747-64.34-32.386-11.177-1.657-22.508-1.657-33.683 0-30.336 4.5-57.103 20.54-75.372 45.172-18.27 24.63-25.854 54.903-21.355 85.237 4.5 30.335 20.54 57.102 45.172 75.372 19.996 14.83 43.706 22.62 68.153 22.62 5.667 0 11.375-.42 17.083-1.266 30.336-4.5 57.103-20.542 75.372-45.173 18.27-24.63 25.855-54.9 21.356-85.236zM267.79 327.633c-19.404 2.882-38.77-1.973-54.526-13.66-15.757-11.687-26.02-28.81-28.896-48.216-2.878-19.405 1.973-38.77 13.66-54.527 11.688-15.758 28.81-26.02 48.217-28.898 3.574-.53 7.173-.795 10.772-.795s7.2.265 10.773.796c32.23 4.78 57.098 29.645 61.878 61.877 5.94 40.058-21.817 77.482-61.877 83.422zM400.05 111.95c-3.853-3.85-9.184-6.057-14.626-6.057S374.65 108.1 370.8 111.95c-3.852 3.853-6.06 9.175-6.06 14.626 0 5.45 2.208 10.773 6.06 14.625 3.85 3.852 9.182 6.06 14.624 6.06s10.773-2.207 14.625-6.06c3.85-3.85 6.057-9.182 6.057-14.624 0-5.443-2.207-10.774-6.058-14.625z"/>
+		    </symbol>
+	  	</svg>
+	</div>
+
 	<!-- Load Scripts Start -->
 	<script src="js/libs.js" defer></script>
 	<script src="js/common.js" defer></script>
 	<!-- Load Scripts End -->
 
 </body>
+
 </html>

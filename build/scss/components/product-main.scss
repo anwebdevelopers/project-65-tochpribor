@@ -122,6 +122,7 @@
     margin: 0 1% 0 10%;
 
     position: relative;
+    z-index: 1;
     &:before {
         content: attr(data-text-decoration);
         position: absolute;
